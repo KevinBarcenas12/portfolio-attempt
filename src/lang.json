@@ -1,0 +1,104 @@
+{
+    "pages": {
+        "chose-lang": {
+            "info": {
+                "title": {
+                    "es": "Selecciona tu lenguaje",
+                    "en": "Select your lang"
+                },
+                "desc": {
+                    "es": "Selecciona el lenguaje en que quieres ver la página",
+                    "en": "Select the lang you want to see the page"
+                },
+                "link": {
+                    "es": "Cambiar lenguaje",
+                    "en": "Change lang"
+                }
+            },
+            "body": {
+                "title": {
+                    "es": "Selecciona el lenguaje",
+                    "en": "Select your lang"
+                },
+                "button": {
+                    "es": "Continuar",
+                    "en": "Continue"
+                }
+            }
+        },
+        "home": {
+            "info": {
+                "title": {
+                    "es": "Portafolio - Inicio",
+                    "en": "Portfolio - Home"
+                },
+                "desc": {
+                    "es": "",
+                    "en": ""
+                },
+                "link": {
+                    "es": "Inicio",
+                    "en": "Home"
+                }
+            },
+            "body": {
+                "top": {
+                    "greeting": {
+                        "es": "Bienvenido",
+                        "en": "Welcome"
+                    }
+                }
+            }
+        },
+        "about": {
+            "info": {
+                "title": {
+                    "es": "Portafolio - Sobre mi",
+                    "en": "Portfolio - About me"
+                },
+                "desc": {
+                    "es": "",
+                    "en": ""
+                },
+                "link": {
+                    "es": "Sobre mi",
+                    "en": "About me"
+                }
+            }
+        },
+        "projects": {
+            "info": {
+                "title": {
+                    "es": "Portafolio - Proyectos",
+                    "en": "Portfolio - Projects"
+                },
+                "desc": {
+                    "es": "",
+                    "en": ""
+                },
+                "link": {
+                    "es": "Proyectos",
+                    "en": "Projects"
+                }
+            }
+        }
+    },
+    "utilities": {
+        "available-langs": {
+            "es": {
+                "name": {
+                    "es": "Español",
+                    "en": "Spanish"
+                },
+                "icon": "ES"
+            },
+            "en": {
+                "name": {
+                    "es": "Inglés",
+                    "en": "English"
+                },
+                "icon": "US"
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@layer base {
+    #root {
+        @apply bg-gradient-to-br from-[#001] via-[#001] to-[#113]
+    }
+    
+    .nav-list a.active {
+        @apply text-cyan-300;
+    }
+
+    .nav-list a {
+        @apply text-white;
+    }
+}
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family:
+        source-code-pro,
+        Menlo,
+        Monaco,
+        Consolas,
+        'Courier New',
+        monospace;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+    perspective: 600vw;
+    -moz-perspective: 600vw;
+}
+#root > * {
+    justify-self: stretch;
+    place-self: stretch;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600vw;
+    -moz-perspective: 600vw;
+}
+.animated-line {
+    background: linear-gradient(to right, var(--tw-gradient-from, hsl(200 100% 50% / 1)), var(--tw-gradient-to, hsl(190 100% 50% / 1)));
+    background-size: 0 var(--tw-bg-size, .125rem);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transition: background-size .25s;
+}
+@media screen and (any-hover) {
+    .animated-line:hover {
+        background-size: 100% var(--tw-bg-active-size, .25rem);
+    }
+}
+.animated-line:active,
+.animated-line.active {
+    background-size: 100% var(--tw-bg-active-size, .25rem);
+}
+
+.hidden-scrollbar {
+    -ms-flow-style: none;
+    scrollbar-width: none;
+}
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.transition-container {
+    transform-origin: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.lang__selection-container {
+    flex-direction: row;
+}
+@media screen and (any-hover) and (max-width: 400) {
+    .lang__selection-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (hover: none) and (orientation: portrait) {
+    .lang__selection-container {
+        flex-direction: column;
+    }
+}
+.nav-list > * {
+    display: block;
+    margin-bottom: .5rem;
+}
+.grid-layout {
+    place-items: center;
+}
+.grid-layout > * {
+    position: relative;
+    width: calc(100% - .25rem);
+    height: calc(100% - .25rem);
+    min-height: 3rem;
+    color: currentColor;
+    border: 1px black solid;
+}
+.floating-animation {
+    animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+    50% { transform: translateY(-20%); }
+}
+@-o-keyframes floating {
+    50% { transform: translateY(-20%); }
+}
+@-moz-keyframes floating {
+    50% { transform: translateY(-20%); }
+}
+@-webkit-keyframes floating {
+    50% { transform: translateY(-20%); }
+}
